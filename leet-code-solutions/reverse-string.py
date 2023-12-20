@@ -1,15 +1,12 @@
-class Solution(object):
-    def reverseString(self, s):
-        i=0
-        j=1
-        while i<len(s):
-            if(i==len(s)//2):
-                break
-            s[i],s[len(s)-j]=s[len(s)-j],s[i]
-            j+=1
-            i+=1
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        start=0
+        end=len(s)-1
+        while start<end:
+            s[start],s[end]=s[end],s[start]
+            start+=1 ; end-=1
 
-        return s
+        print(s)
 
 
         
