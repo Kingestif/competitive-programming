@@ -6,6 +6,7 @@ class Solution:
         # occurece
         for i in range(len(costs)):
             temp[costs[i]]+=1
+        print(temp)
 
         temp2=[0]*maxx
         total=0
@@ -14,6 +15,7 @@ class Solution:
             temp2[i]=total
             total+=temp[i]
 
+        print(temp2)
 
         temp3=[0]*len(costs)
         # add then inc
@@ -21,6 +23,7 @@ class Solution:
             temp3[temp2[costs[i]]]=costs[i]
             temp2[costs[i]]+=1
 
+        print(temp3)
 
         ans=0
         for i in temp3:
