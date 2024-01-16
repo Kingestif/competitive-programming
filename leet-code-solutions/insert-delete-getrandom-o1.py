@@ -22,7 +22,8 @@ class RandomizedSet:
             return False
 
     def getRandom(self) -> int:
-        random_element = random.choice(list(self.num))
+        random_element = random.choice(tuple(self.num))
+        print(random_element)
         return random_element
 
 
