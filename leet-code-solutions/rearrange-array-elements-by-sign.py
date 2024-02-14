@@ -12,6 +12,7 @@ class Solution:
         for i in range(len(new1)):
             new3.append(new1[i])
             new3.append(new2[i])
+            
         return new3
 
         
