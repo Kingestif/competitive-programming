@@ -1,6 +1,7 @@
 from collections import Counter
 class Solution:
     def findDuplicates(self, nums: List[int]) -> List[int]:
+        # Core: first know what cyclic sort is (it sort e/ts in o(N) that range from [1,N]) so use that concept 
         i = 0   ;   ans = []
         while i < len(nums):
             index = nums[i] - 1
