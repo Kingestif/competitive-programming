@@ -1,15 +1,17 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
-        # using 2 pointer
-        i = 0   ;   j = 0
-        count = 0
+        # using dp, first do using 2 pointer
+        def dp(l,r):
+            if r >= len(t) or l >= len(s):
+                return 0
 
-        while i < len(s) and j < len(t):
-            if s[i] == t[j]:
-                i += 1
-                j += 1
-                count += 1
+            if s[l] == t[r]:
+                return dp(l+1,r+1) + 1
             else:
-                j += 1
+                return dp(l,r+1)
 
-        return i == len(s)
+
+        val = dp(0,0)
+        return val == len(s)
+
+        
