@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution:
     def delNodes(self, root: Optional[TreeNode], to_delete: List[int]) -> List[TreeNode]:
-        # REFER keven naughton
+        # REFER keven 
 
         # Core: used for future, we gonna start bottom to top instead of top to bottom to hold the nodes of childs with Deleted parents
         # so we traverse using DFS until it becomes null(bottom one) act as base case then we delete that node if its on the "to_delete" then we add its childs to remaining
