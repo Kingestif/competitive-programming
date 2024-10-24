@@ -7,7 +7,6 @@ class Solution:
         val = set() 
         for i in range(len(A)):
             val.add(A[i])
-            print(val)
             map1[i] = val.copy()
 
         val = []
