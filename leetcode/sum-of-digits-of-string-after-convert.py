@@ -1,6 +1,5 @@
 class Solution:
     def getLucky(self, s: str, k: int) -> int:
-        print(ord('a'))
         ls = []
         num = ''
         for i in s:
