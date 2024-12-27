@@ -1,7 +1,7 @@
 class Solution:
     def canPartition(self, nums: List[int]) -> bool:
         memo = defaultdict(int)
-        if sum(nums) % 2 != 0:  #means we can't divide it equally
+        if sum(nums) % 2 != 0: 
             return False
 
         def dp(idx,val):
